@@ -1,0 +1,686 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  width: 100%;
+  background-color: #00693c;
+  display: flex;
+  justify-content: space-around;
+}
+.footer {
+  background-color: #00693c;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: darkgreen;
+}
+.greenbox {
+  overflow: hidden;
+  background-color: #00693c;
+}
+.top {
+  font-size: 20px;
+  color: white;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+.column.close {
+  width: 33.33%;
+}
+
+/* Left and right column */
+.column.side {
+  width: 30%;
+}
+
+.column.side-thirthy {
+  width: 33.33%;
+}
+.column.side-twentyfive {
+  width: 25%;
+  background-color: #ddd;
+  border: 1px solid black;
+}
+.column.side-fivethy {
+  width: 50%;
+  background-color: #ddd;
+  border: 1px solid black;
+}
+.headlinee {
+  font-size: 25px;
+}
+
+.box {
+  width: 370px;
+  height: 280px;
+  margin: auto;
+  background-color: white;
+  border-radius: 3px;
+}
+/* Middle column */
+.column.middle {
+  width: 40%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.block-wide {
+  width: 100%;
+  background-color: white;
+}
+.block-wide-1 {
+  width: 100%;
+  background-color: darkgreen;
+  border-top: 2px solid red;
+}
+.headline {
+  font-size: 25px;
+}
+ul.li-headline {
+  padding: 0px;
+}
+.li-headline li {
+  border-bottom: 1px solid gray;
+  list-style: none;
+  padding: 5px 0px;
+  margin: 5px 0px;
+}
+.line {
+  width: 14%;
+  background-color: black;
+}
+.small {
+  font-size: 1rem;
+}
+footer {
+  background-color: #00693c;
+  padding-bottom: 5rem;
+}
+footer a {
+  color: white;
+}
+.block-footer {
+  margin: 0 auto;
+  width: 1400px;
+}
+.column.fourteen {
+  width: 14.28%;
+  font-size: 15px;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+ul {
+  list-style: none;
+}
+li {
+  padding-bottom: 10px;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+input[type="text"] {
+  padding-right: 600px;
+  padding-left: 600px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border: none;
+  font-size: 15px;
+}
+.menuu {
+  color: white;
+}
+.menu a:hover {
+  text-decoration: underline;
+  color: white;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+}
+form button {
+  color: green;
+  border: none;
+  background: transparent;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+form button span {
+  font-weight: 500;
+  margin-left: 6px;
+}
+.block-footercenter {
+  margin: 0 auto;
+  width: 1300px;
+  color: white;
+  padding-bottom: 25px;
+}
+
+.footer-nav {
+  font-size: small;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f1eeee;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+footer h1 {
+  color: white;
+}
+.grid {
+  max-width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+}
+.item {
+  width: 300px;
+  margin: 1rem;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.7);
+}
+.item > img {
+  width: 100%;
+  height: auto;
+}
+.item h1 {
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+.item h2 {
+  margin: 0 1rem;
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+.item p {
+  margin: 0 1rem;
+  font-size: 1.3rem;
+  color: grey;
+}
+
+.shopping-cart {
+  width: 500px;
+  height: auto;
+  margin: 20px auto;
+}
+
+.shopping-cart h2 {
+  text-align: center;
+  background-color: #11794d;
+  color: white;
+  font-size: 20px;
+  padding: 15px 0;
+  border: 1px solid black;
+  border-top-width: 0;
+  margin-bottom: 0;
+}
+
+.cart-row {
+  width: 100%;
+  height: 143px;
+  border: 1px solid black;
+}
+
+.item-img {
+  display: inline-flex;
+  width: 140px;
+  height: 140px;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+
+.item-img img {
+  width: 120px;
+  height: 120px;
+}
+
+.item-detail {
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+[type="number"] {
+  width: 45px;
+}
+
+.remove {
+  margin-left: 30px;
+  background-color: #cc1e1e;
+  color: white;
+  font-weight: bold;
+  border-width: 0.5;
+  height: 25px;
+  border: 0.1px black solid;
+}
+
+.item button {
+  background-color: #00693c;
+  padding: 0;
+  margin: 1rem;
+  border: none;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total-div span {
+  font-weight: bold;
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px 15px;
+  text-align: left;
+  padding-left: 20px;
+  color: black;
+  margin: 0;
+}
+
+.li-headline img {
+  width: 90px;
+  border: 0.12px solid rgb(157, 144, 144);
+}
+.checkout {
+  margin-top: 7px;
+  float: right;
+  height: 25px;
+  background-color: lightgreen;
+  font-weight: bold;
+  margin-right: 20px;
+  border: 0.1px black solid;
+}
+
+.total-div {
+  width: 100%;
+  border: 1px black solid;
+  border-top-width: 0;
+  background-color: lightgray;
+}
+
+.cart button {
+  cursor: pointer;
+}
+.item button div {
+  padding: 0.5rem 1rem;
+  background-color: red;
+}
+.item button img {
+  width: 20px;
+  height: auto;
+}
+
+img.item-image {
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  width: 350px;
+  height: 350px;
+}
+
+.cart1 {
+  width: 200px;
+  height: auto;
+  float: left;
+  margin-left: 30px;
+}
+
+.cart1 h1 {
+  width: 400px;
+}
+.cart1 button {
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+.cart1 p {
+  font-size: 20px;
+}
+
+.cart1.two {
+  width: 250px;
+  margin: 0;
+  background-color: #00693c;
+}
+
+.cart1.two h2 {
+  text-align: left;
+  margin: 0;
+  margin-left: 15px;
+  padding: 5px 0;
+  display: block;
+  float: left;
+  color: white;
+}
+
+.cart1.two img {
+  width: 45px;
+  height: 35px;
+  float: right;
+  padding: 5px 10px;
+  background-color: #cc1e1e;
+}
+/* Style the header */
+.header {
+  background-color: #00693c;
+  padding: 0px;
+  text-align: center;
+}
+.footer {
+  background-color: #00693c;
+}
+
+.cart-row h3 {
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  color: #00693c;
+  margin-top: 55px;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: darkgreen;
+}
+/* Style the first top navigation bar */
+.topnav1 {
+  overflow: hidden;
+  background-color: whitesmoke;
+  width: 100%;
+  padding-left: 10%;
+}
+
+/* Style the topnav links */
+.topnav1 a {
+  float: left;
+  text-align: center;
+  color: #6c6969;
+  padding: 4px 8px;
+  text-decoration: none;
+}
+
+.topnav1 a:hover {
+  text-anchor: rgba(7, 20, 1, 0.205);
+  color: rgb(163, 33, 33);
+}
+.topp {
+  font-size: 20px;
+  color: white;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+.column.close {
+  width: 33.33%;
+}
+
+/* Left and right column */
+.column.side {
+  width: 30%;
+}
+
+.column.side-thirthy {
+  width: 33.33%;
+}
+.column.side-twentyfive {
+  width: 25%;
+  background-color: #ddd;
+  border: 1px solid black;
+}
+.column.side-fivethy {
+  width: 50%;
+  background-color: #ddd;
+  border: 1px solid black;
+}
+.headlinee {
+  font-size: 25px;
+}
+
+.box {
+  width: 370px;
+  height: 280px;
+  margin: auto;
+  background-color: white;
+  border-radius: 3px;
+}
+/* Middle column */
+.column.middle {
+  width: 40%;
+}
+
+/* Clear floats after the columns */
+
+.block-center {
+  margin: 0 auto;
+  width: 1100px;
+}
+
+.block-center1 {
+  margin: 0 10%;
+  width: 900px;
+  margin-bottom: 50px;
+}
+
+.block-wide {
+  width: 100%;
+  background-color: darkgreen;
+}
+
+.headline {
+  font-size: 25px;
+}
+ul.li-headline {
+  padding: 0px;
+}
+.li-headline li {
+  border-bottom: 1px solid gray;
+  list-style: none;
+  padding: 5px 0px;
+  margin: 5px 0px;
+}
+.line {
+  width: 14%;
+  background-color: black;
+}
+.small {
+  font-size: 15px;
+}
+footer {
+  background-color: #00693c;
+  display: block;
+}
+
+footer p {
+  font-weight: bold;
+  color: white;
+}
+footer a {
+  color: white;
+}
+.block-footer {
+  margin: 0 auto;
+  width: 1400px;
+}
+.column.fourteen {
+  width: 14.28%;
+  font-size: 15px;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+ul {
+  list-style: none;
+}
+li {
+  padding-bottom: 10px;
+}
+input[type="text"] {
+  padding-right: 600px;
+  padding-left: 600px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border: none;
+  font-size: 15px;
+}
+.menuu {
+  color: white;
+}
+.menu a:hover {
+  text-decoration: underline;
+  color: white;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+}
+form button {
+  color: green;
+  border: none;
+  background: transparent;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+}
+form button span {
+  font-weight: 500;
+  margin-left: 6px;
+}
+.block-footercenter {
+  margin: 0 auto;
+  width: 1300px;
+  color: white;
+  padding-bottom: 25px;
+}
+.footer-nav {
+  font-size: small;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f1eeee;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.block-center .cart1 {
+  padding: 30px;
+}
+
+/*outlet*/
+
+.outlet-box {
+  width: auto;
+  height: auto;
+  margin: auto;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.column-right {
+  float: right;
+  padding: 10px;
+}
+.bg-ct {
+  background-color: darkseagreen;
+}
+.bg-cb {
+  background-color: lightgrey;
+}

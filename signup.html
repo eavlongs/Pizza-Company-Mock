@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Sign Up</h1>
+      <h4>Create Your New Account Here</h4>
+      <form onsubmit="return false">
+        <div>
+          <label>First Name <strong style="color: red"> *</strong></label>
+          <input type="text" id="fname" name="fname" placeholder="" />
+        </div>
+
+        <div>
+          <label>Last Name <strong style="color: red"> *</strong></label>
+          <input type="text" id="lname" name="lname" placeholder="" />
+        </div>
+
+        <div>
+          <label>Email <strong style="color: red"> *</strong></label>
+          <input type="text" id="email" name="email" placeholder="" />
+        </div>
+
+        <div>
+          <label>Password <strong style="color: red"> *</strong></label>
+          <input type="password" id="pwd" name="pwd" placeholder="" />
+        </div>
+
+        <div>
+          <label>Phone Number <strong style="color: red"> *</strong></label>
+          <input type="text" id="phone" name="phone" placeholder="" />
+        </div>
+        <button class="signup-btn cursor-pointer" onclick="signUp()">
+          Submit
+        </button>
+      </form>
+      <p id="user-exist" style="color: red; display: none">
+        User with this email already exist!
+      </p>
+      <p>
+        By clicking the Sign Up button,you agree to our <br />
+        <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a>
+      </p>
+    </div>
+    <p class="para-2">
+      Already have an account? <a href="login.html">Login here</a>
+    </p>
+    <p class="para-2">
+      Want to return to home page? <a href="index.php">Return home</a>
+    </p>
+    <script src="./scripts/signup.js"></script>
+  </body>
+</html>
